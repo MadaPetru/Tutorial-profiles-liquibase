@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  mysqlDb:
+    image: mysql
+    ports:
+      - 3310:3306
+    container_name: mysql_container
+    environment:
+        MYSQL_ROOT_PASSWORD: password
+        MYSQL_USER: adi
+        MYSQL_PASSWORD: password
+        MYSQL_DATABASE: appDb
+volumes:
+  myapp:

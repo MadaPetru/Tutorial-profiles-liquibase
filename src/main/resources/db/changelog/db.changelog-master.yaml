@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/create-user-h2.xml
+      contexts: h2
+  - include:
+      file: db/changelog/create-user-mysql.sql
+      contexts: mysql
+  - include:
+      file: db/changelog/insert-record-user.sql
+      contexts: h2
